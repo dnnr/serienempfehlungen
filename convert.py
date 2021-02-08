@@ -41,7 +41,6 @@ def main():
 
     template = Template(Path(TEMPLATE_FILE).read_text())
     output = template.render(recommendations=recommendations)
-    print(output)
 
     outfile.write_text(output)
 
